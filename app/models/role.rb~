@@ -1,6 +1,6 @@
 class Role < ActiveRecord::Base
 
-  attr_accesor :name, :description
+  attr_accessor :name, :description
 
   validates :name, presence: true, length: { maximum: 50 }
 
